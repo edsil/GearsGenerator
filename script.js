@@ -16,7 +16,7 @@ const drawing = "#FFFFFF";
 
 const lineWidth = 1;
 var choosenGear = 6;
-var gears = new Array(6);
+var gears = new Array(7);
 var sp = 0.0;
 var proport = 0.25;
 
@@ -133,7 +133,12 @@ function animate(ts) {
   requestAnimationFrame(animate);
 }
 
-
+function readUserAndDraw(){
+  w = h = elradius[0].value * 2 + lineWidth + 1;
+  let dents = eldents.value * 1;
+  
+  gears[7] = [w/2,h/2,dents,proport,[240,224,128,112,56,32,16,16],8,0.9,0,0];
+}
 
 function setGears(){
 gears[0] = [w/2,h/2,32,proport,[240,224,128,112,56,32,16,16],8,0.9,0,0];
