@@ -281,7 +281,9 @@ function setGears() {
 function draw(ts) {
   ctx.fillStyle = backgroundColor;
   ctx.fillRect(0, 0, w, h);
-  if (sp != 0) ctx.drawImage(bgImg, 0, 0);
+  if (sp != 0) {
+    ctx.drawImage(bgImg, 0, 0);
+  }
   ctx.strokeStyle = drawing;
   ctx.lineWidth = lineWidth;
   if (hitDraw) {
