@@ -20,58 +20,66 @@
     </div>
     <div class="input-group">
       <label for="dents">Dents:</label>
-      <input type="number" id="dents" value="6">
+      <input type="number" id="dents" value="16">
     </div>
     <div class="input-group">
-      <label for="proport">Out/Inner:</label>
-      <input type="number" id="proport" value="0.5" step="0.01" min="0" max="1">
+      <label for="extdentarc">Dent arc(ext):</label>
+      <input type="number" id="extdentarc" value="50">
     </div>
     <div class="input-group">
-      <label for="r0">Radius 0:</label>
-      <input type="number" id="r0" value="300">
+      <label for="dentlen">Dent lenght:</label>
+      <input type="number" id="dentlen" value="22">
     </div>
     <div class="input-group">
-      <label for="r1">Radius 1:</label>
-      <input type="number" id="r1" value="250">
+      <label for="intfactor">Int factor:</label>
+      <input type="number" id="intfactor" value="0.90" step="0.01" min="0" max="1">
     </div>
     <div class="input-group">
-      <label for="r2">Radius 2:</label>
-      <input type="number" id="r2" value="200">
+      <label for="extfactor">Ext factor:</label>
+      <input type="number" id="extfactor" value="0.90" step="0.01" min="0" max="1">
+    </div>
+   <div class="input-group">
+      <label for="r0">Inner ring rad 0:</label>
+      <input type="number" id="r0" value="0.85" step="0.01" min="0" max="1">
     </div>
     <div class="input-group">
-      <label for="r3">Radius 3:</label>
-      <input type="number" id="r3" value="160">
+      <label for="r1">Inner ring rad 1:</label>
+      <input type="number" id="r1" value="0.80" step="0.01" min="0" max="1">
     </div>
     <div class="input-group">
-      <label for="r4">Radius 4:</label>
-      <input type="number" id="r4" value="130">
+      <label for="r2">Inner ring rad 2:</label>
+      <input type="number" id="r2" value="0.5" step="0.01" min="0" max="1">
     </div>
     <div class="input-group">
-      <label for="r5">Radius 5:</label>
-      <input type="number" id="r5" value="120">
+      <label for="r3">Inner ring rad 3:</label>
+      <input type="number" id="r3" value="0.45" step="0.01" min="0" max="1">
     </div>
     <div class="input-group">
-      <label for="r6">Radius 6:</label>
-      <input type="number" id="r6" value="60">
+      <label for="r4">Inner ring rad 4:</label>
+      <input type="number" id="r4" value="0.2" step="0.01" min="0" max="1">
     </div>
     <div class="input-group">
-      <label for="r7">Radius 7:</label>
-      <input type="number" id="r7" value="50">
+      <label for="r5">Inner ring rad 5:</label>
+      <input type="number" id="r5" value="0.2" step="0.01" min="0" max="1">
     </div>
     <div class="input-group">
-      <label for="r8">Radius 8:</label>
-      <input type="number" id="r8" value="25">
+      <label for="r6">Inner ring rad 6:</label>
+      <input type="number" id="r6" value="0.2" step="0.01" min="0" max="1">
     </div>
     <div class="input-group">
       <label for="circles">Circles:</label>
-      <input type="number" id="circles" value="7">
+      <input type="number" id="circles" value="4">
     </div>
     <div class="input-group">
       <label for="circlesRadius">Circ Radi:</label>
       <input type="number" id="circlesRadius" value="0.8" step="0.01" min="0" max="1">
     </div>
+    <div class="input-group">
+      <label for="rotspeed">Rot Speed:</label>
+      <input type="number" id="rotspeed" value="0.0" step="0.5" min="0" max="10">
+    </div>
   </div>
-  <button id="draw">Draw</button>
+  <button id="draw" script="readUserAndDraw();">Draw</button>
   <canvas id="canvas"></canvas>
   <div id="info1" class="info">
   </div>

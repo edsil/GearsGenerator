@@ -8,7 +8,7 @@ body {
 #canvas {
   position: absolute;
   top: 10px;
-  left: 180px;
+  left: 200px;
   background-color: rgba(255, 255, 255, 0);
   border: 2px solid black;
   z-index: 1;
@@ -17,12 +17,13 @@ body {
 input,
 textarea {
   field-sizing: content;
-  width: 50px;
+  width: 60px;
+  font-size:x-small;
 }
 
 label {
   display: inline-block;
-  width: 80px;
+  width: 120px;
   text-align: right;
 }
 
@@ -36,7 +37,9 @@ button {
   cursor: pointer;
 }
 
-
+.input-group {
+  font-size: small;
+}
 
 .info {
   position: absolute;
