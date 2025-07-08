@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(201, 202, 209);
+  overflow: hidden;
+}
+
+#canvas {
+  position: absolute;
+  top: 10px;
+  left: 180px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid black;
+  z-index: 1;
+}
+
+input,
+textarea {
+  field-sizing: content;
+  width: 50px;
+}
+
+label {
+  display: inline-block;
+  width: 80px;
+  text-align: right;
+}
+
+button {
+  margin: 5px;
+  padding: 5px;
+  width: 130px;
+  background-color: rgb(10, 3, 116);
+  color: antiquewhite;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+.info {
+  position: absolute;
+  bottom: 1px;
+  border: 1px solid black;
+  width: 24%;
+  height: 40px;
+  background-color: rgb(33, 33, 33);
+  color:antiquewhite;
+  font-size: small;
+  font-family: monospace;
+}
+
+#info1 {
+  left: 1px;
+}
+
+#info2 {
+  left: 25%;
+}
+
+#info3 {
+  left: 50%;
+}
+
+#info4 {
+  left: 75%;
+}
+
